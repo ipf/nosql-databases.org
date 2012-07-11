@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<title>NOSQL Databases</title>
 	<meta name="author" content="Prof. Dr.Stefan Edlich">
 	<meta name="publisher" content="Prof. Dr.Stefan Edlich">
-	<meta name="description"
-		  content="The ultimate reference for NOSQL Databases. Includes Events, Links, Tools, News, Forums, Books and much more...">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="The ultimate reference for NOSQL Databases. Includes Events, Links, Tools, News, Forums, Books and much more...">
 	<meta name="robots" content="index, follow">
-    <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/x-icon" href="/Resources/Public/Img/favicon.ico">
-	<link href="Resources/Public/Css/Main.css" rel="stylesheet">
-	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-		try {
-			var pageTracker = _gat._getTracker("UA-1535339-3");
-			pageTracker._trackPageview();
-		} catch (err) {
-		}</script>
+	<link rel="stylesheet" href="Resources/Public/Css/style.css">
+		<script src="Resources/Public/Js/libs/modernizr-2.5.3.min.js"></script>		
 </head>
 
 <body>
@@ -46,7 +41,7 @@
 	</div>
 </header>
 
-<div id="main">
+<div id="main" role="main">
 <section>
 	<article>
 		<dl>
@@ -55,13 +50,13 @@
 				distributed, open-source</strong> and <strong>horizontally scalable</strong>.
 			</dd>
 		</dl>
-		The original intention has been <strong>modern web-scale databases</strong>. The movement began early 2009 and
+		<p>The original intention has been <strong>modern web-scale databases</strong>. The movement began early 2009 and
 		is growing rapidly. Often more characteristics apply such as: <strong>schema-free,
 		easy replication support, simple API, eventually consistent</strong> / <strong>BASE</strong> (not ACID), a
 		<strong>huge amount of data</strong> and more. So the misleading term <em>"nosql</em>" (the community now
 		translates it mostly with "<strong>not only sql</strong>") should be seen as an alias to something like the
-		definition above.
-		<small> [based on 5 sources, 11 constructive feedback emails (thanks!) and 1 disliking comment</small>
+		definition above.</p>
+		<small>[based on 5 sources, 11 constructive feedback emails (thanks!) and 1 disliking comment</small>
 		. Agree / Disagree? <a href="mailto:edlich@gmail.com">Tell</a> me so! By the
 		way: this is a strong definition and it is out there since 2009!]
 	</article>
@@ -84,20 +79,20 @@
 	</article>
 	<article>
 		<h3><a href="http://incubator.apache.org/cassandra/">Cassandra</a></h3>
-		API: <strong>many </strong> <a href="http://incubator.apache.org/thrift/">&raquo; Thrift</a>
+		API: <strong>many </strong> <a href="http://incubator.apache.org/thrift/">»Thrift</a>
 		<strong>languages</strong>, Protocol: ?, Query Method: <strong>MapReduce</strong>,
 		Replicaton: , Written in: <strong>Java</strong>, Concurrency: <strong>eventually consistent</strong> , Misc:
 		like "Big-Table on Amazon Dynamo alike", initiated by Facebook, <a
-			href="http://www.slideshare.net/jericevans/an-introduction-to-cassandra">&raquo; Slides</a> , <a
-			href="http://wiki.apache.org/cassandra/ClientExamples">&raquo; Clients</a>, <a
-			href="http://www.sodeso.nl/?p=80">&raquo; Installation</a>
+			href="http://www.slideshare.net/jericevans/an-introduction-to-cassandra">»Slides</a> , <a
+			href="http://wiki.apache.org/cassandra/ClientExamples">»Clients</a>, <a
+			href="http://www.sodeso.nl/?p=80">»Installation</a>
 	</article>
 	<article>
 		<h3><a href="http://hypertable.org/">Hypertable</a></h3>
 		API: <strong>Thrift</strong> (Java, PHP, Perl, Python, Ruby, etc.), Protocol: <strong>Thrift</strong>, Query
 		Method: <strong>HQL, native Thrift API</strong>, Replication: <strong>HDFS Replication</strong>,
 		Concurrency: <strong>MVCC</strong>, Consistency Model: <strong>Fully consistent </strong>Misc: High performance
-		C++ implementation of Google's Bigtable. <a href="http://www.hypertable.com/">&raquo; Commercial support</a><br>
+		C++ implementation of Google's Bigtable. <a href="http://www.hypertable.com/">»Commercial support</a><br>
 	</article>
 	<article>
 		<h3><a href="http://accumulo.apache.org/">Accumulo</a></h3>
@@ -119,7 +114,7 @@
 		<h3><a href="http://www.cloudata.org/">Cloudata</a></h3>
 		Google's Big table clone like HBase. <a
 			href="http://www.readwriteweb.com/hack/2011/02/open-source-bigtable-cloudata.php"
-			>&raquo; Article</a>
+			>»Article</a>
 	</article>
 	<article>
 		<h3><a href="http://www.cloudera.com/">Cloudera</a></h3>
@@ -128,8 +123,8 @@
 	<article>
 		<h3><a href="http://scidb.org/">SciDB</a></h3>
 		<strong>Array</strong> Data Model for Scientists,
-		<a href="http://scidb.org/Documents/SciDB-VLDB09-paper.pdf">&raquo; paper</a>, <a
-			href="http://scidb.org/Documents/SciDB-VLDB09-poster.pdf">&raquo; poster</a>,
+		<a href="http://scidb.org/Documents/SciDB-VLDB09-paper.pdf">»paper</a>, <a
+			href="http://scidb.org/Documents/SciDB-VLDB09-poster.pdf">»poster</a>,
 		<a href="http://highscalability.com/blog/2010/4/29/product-scidb-a-science-oriented-dbms-at-100-petabytes.html">&raquo;
 			HiScaBlog</a>
 	</article>
@@ -159,8 +154,8 @@
 		MapReduce</strong>, Replication: <strong>Master Slave &amp;
 		Auto-Sharding</strong>, Written in: <strong>C++</strong>,Concurrency: <strong>Update in Place</strong>. Misc:
 		<strong>Indexing, GridFS Links:</strong>
-		<a href="http://www.leadit.us/hands-on-tech/MongoDB-High-Performance-SQL-Free-Database">&raquo; Talk</a>, <a
-			href="http://www.paperplanes.de/2010/2/25/notes_on_mongodb.html">&raquo; Notes</a>
+		<a href="http://www.leadit.us/hands-on-tech/MongoDB-High-Performance-SQL-Free-Database">»Talk</a>, <a
+			href="http://www.paperplanes.de/2010/2/25/notes_on_mongodb.html">»Notes</a>
 	</article>
 	<article>
 		<h3><a href="http://couchdb.apache.org/">CouchDB</a></h3>
@@ -169,16 +164,16 @@
 		Query Method: <strong>MapReduceR of JavaScript Funcs</strong>, Replication: <strong>Master Master</strong>,
 		Written in: <strong>Erlang</strong>, Concurrency: <strong>MVCC</strong>, <strong>Misc</strong>: <br>
 		<strong>Links</strong>:
-		<a href="http://couchdb.apache.org/docs/books.html">&raquo; 3 CouchDB books </a>, <a
-			href="http://tilgovi.github.com/couchdb-lounge/">&raquo; Couch Lounge</a>
-		(partitioning / clusering), <a href="http://www.drdobbs.com/java/223100116">&raquo; Dr. Dobbs</a>
+		<a href="http://couchdb.apache.org/docs/books.html">»3 CouchDB books </a>, <a
+			href="http://tilgovi.github.com/couchdb-lounge/">»Couch Lounge</a>
+		(partitioning / clusering), <a href="http://www.drdobbs.com/java/223100116">»Dr. Dobbs</a>
 	</article>
 	<article>
 		<h3><a href="http://github.com/ravendb/ravendb">RavenDB</a></h3>
 		.Net solution. Provides <strong>HTTP/JSON</strong>
 		access. <strong>LINQ</strong>
 		queries &amp; <strong>Sharding</strong>
-		supported. <a href="http://www.codeproject.com/KB/cs/RavenDBIntro.aspx">&raquo; Misc</a>
+		supported. <a href="http://www.codeproject.com/KB/cs/RavenDBIntro.aspx">»Misc</a>
 	</article>
 	<article>
 		<h3><a href="http://www.clusterpoint.com/">Clusterpoint Server</a></h3>
@@ -245,7 +240,7 @@
 	Written in: <strong>C/C++</strong> + <strong>Erlang</strong> (clustering), Replication: <strong>Peer to Peer, fully
 	consistent</strong>, Misc: <strong>Transparent topology changes during operation, provides memcached-compatible
 	caching buckets, commercially supported version available</strong>,
-	Links: <a href="http://wiki.membase.org">&raquo; Wiki</a>,
+	Links: <a href="http://wiki.membase.org">»Wiki</a>,
 	<a href="http://www.infoq.com/news/2010/10/membase">&raquo;
 		Article</a>
 </article>
@@ -1272,7 +1267,7 @@
 		rated</strong> on Google for "nosql", and is the <strong>#1</strong>
 		source for NoSQL <strong>system</strong>.]
 	</p>
-	<p><a href="feedback.html">&raquo; Contact &amp; Feedback</a> | <a href="impressum.html">&raquo; Imprint</a></p>
+	<p><a href="feedback.html">»Contact &amp; Feedback</a> | <a href="impressum.html">»Imprint</a></p>
 </footer>
 
 <!-- Start of StatCounter Code -->
@@ -1288,6 +1283,20 @@
 		<a title="blogspot statistics" href="http://www.statcounter.com/blogger/"><img class="statcounter" src="http://c.statcounter.com/5229882/0/f871774f/1/" alt=""></a>
 	</div>
 </noscript>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="Resources/Public/Js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="Resources/Public/Js/plugins.js"></script>
+<script src="Resources/Public/Js/script.js"></script>
+<!-- end scripts-->
+
+<script>
+	var _gaq=[['_setAccount','UA-1535339-3'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
 <!-- End of StatCounter Code -->
 

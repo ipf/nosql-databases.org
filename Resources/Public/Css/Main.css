@@ -49,7 +49,6 @@ aside h3 a {
 dl dt {
   display: inline;
   font-weight: bold;
-  float: left;
 }
 dl dt a:link {
   color: #000099;
